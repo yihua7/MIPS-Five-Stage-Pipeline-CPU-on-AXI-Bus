@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep 17 20:54:05 2018
+# Process ID: 3556
+# Current directory: D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1
+# Command line: vivado.exe -log data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
+# Log file: D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/data_ram.vds
+# Journal file: D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_ram.tcl -notrace

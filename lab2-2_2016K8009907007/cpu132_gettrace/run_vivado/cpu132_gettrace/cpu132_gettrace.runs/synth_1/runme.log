@@ -1,0 +1,1055 @@
+
+*** Running vivado
+    with args -log soc_lite_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source soc_lite_top.tcl -notrace
+Command: synth_design -top soc_lite_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11276 
+WARNING: [Synth 8-1935] empty port in module declaration [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:65]
+WARNING: [Synth 8-1935] empty port in module declaration [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:66]
+WARNING: [Synth 8-1935] empty port in module declaration [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:67]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 402.934 ; gain = 114.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/soc_lite_top.v:57]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_top' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_interface' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_interface.v:36]
+	Parameter WR_IDLE bound to: 3'b000 
+	Parameter WR_ADDR_OK_DATA_NO bound to: 3'b001 
+	Parameter WR_ADDR_NO_DATA_OK bound to: 3'b010 
+	Parameter WR_ADDR_OK_DATA_OK bound to: 3'b011 
+	Parameter WR_WAIT_RESP bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element pesudo_axi_raddr_r_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_interface.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_interface' (2#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_interface.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_fetch_stage' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_fetch_stage.v:36]
+	Parameter EMPTY bound to: 3'b000 
+	Parameter FETCH bound to: 3'b001 
+	Parameter STALL bound to: 3'b010 
+	Parameter FULL bound to: 3'b011 
+	Parameter STALL_CANCEL bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_fetch_stage' (3#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_fetch_stage.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_decode_stage' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_decode_stage.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_decoder_6_64' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_decoder_6_64' (4#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:98]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_decoder_5_32' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_decoder_5_32' (5#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gr_heap_2r1w_32x32' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_decode_stage.v:1270]
+INFO: [Synth 8-6155] done synthesizing module 'gr_heap_2r1w_32x32' (6#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_decode_stage.v:1270]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_decode_stage' (7#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_decode_stage.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_execute_stage' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_first_one_32_5' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:193]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_first_one_8_3' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_first_one_8_3' (8#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:216]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_first_one_4_2' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:231]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_first_one_4_2' (9#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:231]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_first_one_32_5' (10#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:193]
+WARNING: [Synth 8-308] ignoring empty port [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:66]
+WARNING: [Synth 8-308] ignoring empty port [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:67]
+WARNING: [Synth 8-308] ignoring empty port [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_execute_stage' (11#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:36]
+WARNING: [Synth 8-350] instance 'u_execute' of module 'ls132r_execute_stage' requires 30 connections, but only 27 given [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_top.v:336]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_rstgen' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:241]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_rstgen' (12#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v:241]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_tap' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:77]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_fsm' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:702]
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_fsm' (13#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:702]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_instreg' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:222]
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_instreg' (14#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:222]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_decode' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:854]
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_decode' (15#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:854]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_reg_group' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:280]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_basicreg' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter RST_VAL bound to: 536938521 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_basicreg' (16#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_basicreg__parameterized0' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter RST_VAL bound to: 1090535424 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_basicreg__parameterized0' (16#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_basicreg__parameterized1' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter RST_VAL bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_basicreg__parameterized1' (16#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+INFO: [Synth 8-6157] synthesizing module 'ejtag_tap_basicreg__parameterized2' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter RST_VAL bound to: 12'b000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_basicreg__parameterized2' (16#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:894]
+INFO: [Synth 8-6155] done synthesizing module 'ejtag_tap_reg_group' (17#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:280]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_tap' (18#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:77]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_tap_buffer' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap_buffer.v:36]
+WARNING: [Synth 8-6014] Unused sequential element keep_dint_reg_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap_buffer.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_tap_buffer' (19#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap_buffer.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_dcr' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_dcr.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_dcr' (20#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_dcr.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_hb' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_hb.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ls132r_ejtag_ib' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_hb.v:95]
+	Parameter IBPNUM bound to: 4'b0001 
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_ib' (21#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_hb.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_ejtag_hb' (22#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_hb.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ls132r_top' (23#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'inst_ram' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_ram' (24#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (25#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v:50]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (26#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/.Xil/Vivado-7292-DESKTOP-HL6I6PS/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CONFREG/confreg.v:71]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (27#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CONFREG/confreg.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (28#1) [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/soc_lite_top.v:57]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[31]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[30]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[29]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[28]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[27]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[26]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[25]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[24]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[23]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[22]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[21]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[20]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[19]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[18]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[17]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[16]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[33]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[32]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[31]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[30]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[29]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[28]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[27]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[26]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[25]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[24]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[23]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[22]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[21]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[20]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[19]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[18]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[17]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[16]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[15]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[9]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[8]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[7]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[4]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[3]
+WARNING: [Synth 8-3331] design ls132r_ejtag_ib has unconnected port hb_reqbus[2]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[46]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[7]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[6]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[5]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[4]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[3]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[2]
+WARNING: [Synth 8-3331] design ls132r_ejtag_hb has unconnected port exbus_i[1]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[65]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[64]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[63]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[62]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[61]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[60]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[59]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[58]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[57]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[56]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[55]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[54]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[53]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[52]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[51]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[50]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[49]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[48]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[47]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[46]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[45]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[44]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[43]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[42]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[41]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[40]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[39]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[36]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[35]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[34]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[33]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[32]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[31]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[30]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[29]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[28]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[27]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[26]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[25]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[24]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[23]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[22]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[21]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[20]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[19]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[18]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[17]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[16]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[15]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[14]
+WARNING: [Synth 8-3331] design ls132r_ejtag_dcr has unconnected port dcr_reqbus[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 485.523 ; gain = 197.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 485.523 ; gain = 197.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 485.523 ; gain = 197.512
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Finished Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
+Finished Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
+Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Finished Parsing XDC File [d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Parsing XDC File [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'clk_pll/inst/plle2_adv_inst/CLKOUT1'. [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc:91]
+WARNING: [Vivado 12-508] No pins matched 'clk_pll/inst/plle2_adv_inst/CLKOUT0'. [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc:92]
+Finished Parsing XDC File [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/soc_lite_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 898.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "axi_wtrans_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_wtrans_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_paddr3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ex_entry1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_entry_bev05" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_pc_r0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_pc_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dec_ex_ce0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'cr_debug_Doze_reg' into 'cr_cause_FDCI_reg' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:532]
+INFO: [Synth 8-4471] merging register 'cr_debug_Halt_reg' into 'cr_cause_FDCI_reg' [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:532]
+WARNING: [Synth 8-6014] Unused sequential element cr_debug_Doze_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:532]
+WARNING: [Synth 8-6014] Unused sequential element cr_debug_Halt_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:532]
+INFO: [Synth 8-5546] ROM "cr_cause_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cr_cause_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mem_paddr3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_width1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cr_depc_DEPC0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cr_depc_DEPC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tbuf_r1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "div_a_in" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'ejtag_tap_fsm'
+INFO: [Synth 8-5544] ROM "ind" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "capture_ir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_ir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "updata_ir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "capture_dr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_dr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "updata_dr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "norboot" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "boot" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_rw_select" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_rw_select" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "btn_key_tmp13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_csn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_a_g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0000 |                             0000
+                 iSTATE1 |                             0001 |                             0001
+                 iSTATE0 |                             0010 |                             0010
+                 iSTATE7 |                             0011 |                             1001
+                 iSTATE4 |                             0100 |                             1010
+                 iSTATE3 |                             0101 |                             1011
+                iSTATE14 |                             0110 |                             1100
+                iSTATE13 |                             0111 |                             1101
+                iSTATE12 |                             1000 |                             1110
+                iSTATE10 |                             1001 |                             1111
+*
+                  iSTATE |                             1010 |                             0011
+                iSTATE11 |                             1011 |                             0100
+                 iSTATE9 |                             1100 |                             0101
+                 iSTATE6 |                             1101 |                             0110
+                 iSTATE5 |                             1110 |                             0111
+                 iSTATE8 |                             1111 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'ejtag_tap_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+                  iSTATE |                              101 |                              001
+                 iSTATE0 |                              100 |                              010
+                 iSTATE1 |                              011 |                              011
+                 iSTATE2 |                              010 |                              100
+                 iSTATE3 |                              001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               97 Bit    Registers := 1     
+	               32 Bit    Registers := 79    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 118   
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 75    
+	   3 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	  21 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	  16 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 19    
+	  21 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 33    
+	  16 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 20    
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 97    
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 14    
+	  16 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module soc_lite_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ls132r_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      1 Bit       Adders := 3     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module ls132r_fetch_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+Module gr_heap_2r1w_32x32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
+Module ls132r_decode_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 3     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ls132r_execute_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               97 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 46    
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 50    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+Module ls132r_ejtag_rstgen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ejtag_tap_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 30    
+	  16 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 14    
+Module ejtag_tap_instreg 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module ejtag_tap_decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     13 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 2     
+Module ejtag_tap_basicreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ejtag_tap_basicreg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ejtag_tap_basicreg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ejtag_tap_basicreg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ejtag_tap_reg_group 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 18    
+	   9 Input      1 Bit        Muxes := 1     
+Module ls132r_ejtag_tap 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ls132r_ejtag_tap_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ls132r_ejtag_dcr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module ls132r_ejtag_ib 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module ls132r_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bridge_1x2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module confreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	  21 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  21 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+	   6 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element reggroup/ADDR/po_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:940]
+WARNING: [Synth 8-6014] Unused sequential element reggroup/ECR_30_19/po_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:940]
+WARNING: [Synth 8-6014] Unused sequential element reggroup/ECR3/po_reg was removed.  [D:/Computer Architecture/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v:940]
+INFO: [Synth 8-5546] ROM "decode/sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[28]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[27]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[26]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[25]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[24]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[23]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[22]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[21]' (FDC) to 'cpu/u_ejtag_tap/reggroup/ecr_in_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_tap/reggroup/ecr_in_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_rstgen/rff_reg )
+INFO: [Synth 8-3886] merging instance 'cpu/u_interface/arvalid_reg_reg' (FDRE) to 'confreg/simu_flag_reg[0]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[16]' (FDRE) to 'confreg/simu_flag_reg[0]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[0]' (FDRE) to 'confreg/simu_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[24]' (FDRE) to 'confreg/simu_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[8]' (FDRE) to 'confreg/simu_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[17]' (FDRE) to 'confreg/simu_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[1]' (FDRE) to 'confreg/simu_flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[25]' (FDRE) to 'confreg/simu_flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[9]' (FDRE) to 'confreg/simu_flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[18]' (FDRE) to 'confreg/simu_flag_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/nmi_r_reg )
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[2]' (FDRE) to 'confreg/simu_flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[26]' (FDRE) to 'confreg/simu_flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[10]' (FDRE) to 'confreg/simu_flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[19]' (FDRE) to 'confreg/simu_flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[3]' (FDRE) to 'confreg/simu_flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[27]' (FDRE) to 'confreg/simu_flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[11]' (FDRE) to 'confreg/simu_flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[20]' (FDRE) to 'confreg/simu_flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[4]' (FDRE) to 'confreg/simu_flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[28]' (FDRE) to 'confreg/simu_flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[12]' (FDRE) to 'confreg/simu_flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[21]' (FDRE) to 'confreg/simu_flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[5]' (FDRE) to 'confreg/simu_flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[29]' (FDRE) to 'confreg/simu_flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[13]' (FDRE) to 'confreg/simu_flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[22]' (FDRE) to 'confreg/simu_flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[6]' (FDRE) to 'confreg/simu_flag_reg[7]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[30]' (FDRE) to 'confreg/simu_flag_reg[7]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[14]' (FDRE) to 'confreg/simu_flag_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_execute /\tbuf_r_reg[96] )
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[7]' (FDRE) to 'confreg/simu_flag_reg[15]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[31]' (FDRE) to 'confreg/simu_flag_reg[15]'
+INFO: [Synth 8-3886] merging instance 'confreg/simu_flag_reg[23]' (FDRE) to 'confreg/simu_flag_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_rstgen/rff1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/simu_flag_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_execute /cr_cause_FDCI_reg)
+INFO: [Synth 8-3886] merging instance 'cpu/u_execute/cr_cause_IP2_reg' (FDR) to 'cpu/u_execute/cr_cause_IP6_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_execute/cr_cause_IP3_reg' (FDR) to 'cpu/u_execute/cr_cause_IP6_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_execute/cr_cause_IP4_reg' (FDR) to 'cpu/u_execute/cr_cause_IP6_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_execute/cr_cause_IP5_reg' (FDR) to 'cpu/u_execute/cr_cause_IP6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_execute /cr_cause_IP6_reg)
+INFO: [Synth 8-3886] merging instance 'cpu/u_execute/rs_dest_r_reg[5]' (FDE) to 'cpu/u_execute/rs_dest_r_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_execute /\rs_op_r_reg[6] )
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/proben_from_tap_0_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/trap_from_tap_0_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/ejtagbrk_from_tap_0_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/proben_from_tap_reg_reg' (FD) to 'cpu/u_ejtag_tap_buffer/ejtagbrk_from_tap_reg_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/prrst_from_tap_0_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/pracc_from_tap_0_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/trap_from_tap_reg_reg' (FD) to 'cpu/u_ejtag_tap_buffer/pracc_from_tap_reg_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/ejtagbrk_from_tap_reg_reg' (FD) to 'cpu/u_ejtag_tap_buffer/pracc_from_tap_reg_reg'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_dcr/dcr_reg_reg[0]' (FD) to 'cpu/u_ejtag_tap_buffer/keep_pracc_reg_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_dcr/dcr_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/prrst_from_tap_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/pracc_from_tap_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_dcr/dcr_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/keep_pracc_reg_reg' (FD) to 'cpu/u_ejtag_dcr/dcr_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/u_ejtag_dcr/dcr_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpu/u_ejtag_tap_buffer/pracc_to_tap_reg_reg' (FDRE) to 'cpu/u_ejtag_tap_buffer/busy_reg_reg'
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/isram_rd_flag_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/dsram_rd_flag_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/axi_rd_flag_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/axi_wtrans_r_reg[2]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/axi_wtrans_r_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/axi_wtrans_r_reg[0]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_interface/pesudo_axi_rdata_r_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (tbuf_r_reg[96]) is unused and will be removed from module ls132r_execute_stage.
+WARNING: [Synth 8-3332] Sequential element (cr_cause_FDCI_reg) is unused and will be removed from module ls132r_execute_stage.
+WARNING: [Synth 8-3332] Sequential element (rs_op_r_reg[6]) is unused and will be removed from module ls132r_execute_stage.
+WARNING: [Synth 8-3332] Sequential element (cr_cause_IP6_reg) is unused and will be removed from module ls132r_execute_stage.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/ind_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/capture_ir_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/shift_ir_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/updata_ir_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/capture_dr_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/shift_dr_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/updata_dr_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/fsm/pracc_en_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/sr_reg[4]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/sr_reg[3]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/sr_reg[2]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/sr_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/sr_reg[0]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/po_reg[4]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/po_reg[3]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/po_reg[2]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/po_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/instreg/po_reg[0]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[31]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[30]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[29]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[28]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[27]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[26]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[25]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[24]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[23]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[22]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[21]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[20]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[19]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[18]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[17]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[16]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[15]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[14]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[13]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[12]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[11]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[10]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[9]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[8]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[7]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[6]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[5]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[4]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[3]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[2]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/dmseg_addr_r_reg[0]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[31]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[30]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[29]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[28]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[27]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[26]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[25]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[24]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[23]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[22]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[21]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[20]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[19]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[18]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[17]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[16]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[15]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[14]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[13]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[12]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[11]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[10]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[9]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[8]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[7]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[6]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[5]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[4]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[3]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[2]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ADDR/sr_reg[0]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_rocc_buffer_1_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_rocc_buffer_2_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_dm_buffer_1_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_dm_buffer_2_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_ejtagbrk_buffer_1_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr_ejtagbrk_buffer_2_reg) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_ejtag_tap/reggroup/ecr2_reg[4]) is unused and will be removed from module soc_lite_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_pll/cpu_clk' to pin 'clk_pll/bbstub_cpu_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_pll/timer_clk' to pin 'clk_pll/bbstub_timer_clk/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 898.168 ; gain = 610.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 939.406 ; gain = 651.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:37 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:37 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'ls132r_top' to reference 'ls132r_ejtag_tap' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'ls132r_ejtag_tap' to reference 'ejtag_tap_fsm' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_pll       |         1|
+|2     |inst_ram      |         1|
+|3     |data_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_pll  |     1|
+|2     |data_ram |     1|
+|3     |inst_ram |     1|
+|4     |CARRY4   |   130|
+|5     |LUT1     |   102|
+|6     |LUT2     |   235|
+|7     |LUT3     |   341|
+|8     |LUT4     |   934|
+|9     |LUT5     |  1075|
+|10    |LUT6     |  2123|
+|11    |MUXF7    |    20|
+|12    |MUXF8    |     8|
+|13    |FDCE     |     4|
+|14    |FDRE     |  2515|
+|15    |FDSE     |    38|
+|16    |IBUF     |    15|
+|17    |OBUF     |    39|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------------+------+
+|      |Instance         |Module               |Cells |
++------+-----------------+---------------------+------+
+|1     |top              |                     |  7645|
+|2     |  bridge_1x2     |bridge_1x2           |    33|
+|3     |  confreg        |confreg              |  1166|
+|4     |  cpu            |ls132r_top           |  6325|
+|5     |    u_decode     |ls132r_decode_stage  |  1867|
+|6     |      u0_gr_heap |gr_heap_2r1w_32x32   |  1867|
+|7     |    u_ejtag_dcr  |ls132r_ejtag_dcr     |     3|
+|8     |    u_ejtag_hb   |ls132r_ejtag_hb      |    85|
+|9     |      ib_ins     |ls132r_ejtag_ib      |    85|
+|10    |    u_ejtag_tap  |ls132r_ejtag_tap     |     8|
+|11    |      fsm        |ejtag_tap_fsm        |     8|
+|12    |    u_execute    |ls132r_execute_stage |  3231|
+|13    |    u_fetch      |ls132r_fetch_stage   |  1117|
+|14    |    u_interface  |ls132r_interface     |     2|
++------+-----------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1133.359 ; gain = 845.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 817 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 1133.359 ; gain = 432.703
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1133.359 ; gain = 845.348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+227 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 1133.359 ; gain = 856.816
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1133.359 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 17 21:09:08 2018...

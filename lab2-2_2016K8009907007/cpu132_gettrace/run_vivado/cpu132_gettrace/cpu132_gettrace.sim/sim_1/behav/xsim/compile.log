@@ -1,0 +1,205 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_mux
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized1
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized10
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized11
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized12
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized13
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized14
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized15
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized16
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized17
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized18
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized19
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized2
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized20
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized21
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized22
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized23
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized24
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized25
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized26
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized27
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized28
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized29
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized3
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized30
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized31
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized32
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized33
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized34
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized35
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized36
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized37
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized38
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized39
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized4
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized40
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized41
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized42
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized43
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized44
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized45
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized46
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized47
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized48
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized49
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized5
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized50
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized51
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized52
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized53
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized54
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized55
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized56
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized57
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized58
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized59
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized6
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized60
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized61
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized62
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized7
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized8
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_width__parameterized9
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized10
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized11
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized12
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized13
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized14
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized15
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized16
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized17
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized18
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized19
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized20
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized21
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized22
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized23
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized24
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized25
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized26
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized27
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized28
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized29
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized30
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized31
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized32
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized33
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized34
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized35
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized36
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized37
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized38
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized39
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized40
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized41
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized42
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized43
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized44
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized45
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized46
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized47
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized48
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized49
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized50
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized51
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized52
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized53
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized54
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized55
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized56
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized57
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized58
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized59
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized60
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized61
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized62
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized8
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_prim_wrapper__parameterized9
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module data_ram_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_pll_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_sim_netlist.v:140]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CONFREG/confreg.v:154]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_decode_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_decode_stage
+INFO: [VRFC 10-311] analyzing module gr_heap_2r1w_32x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_dcr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_dcr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_hb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_hb
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_ib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_tap
+INFO: [VRFC 10-311] analyzing module ejtag_tap_instreg
+INFO: [VRFC 10-311] analyzing module ejtag_tap_reg_group
+INFO: [VRFC 10-311] analyzing module ejtag_tap_fsm
+INFO: [VRFC 10-311] analyzing module ejtag_tap_decode
+INFO: [VRFC 10-311] analyzing module ejtag_tap_basicreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_ejtag_tap_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_tap_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_execute_stage
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:66]
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:67]
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_execute_stage.v:68]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_fetch_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_fetch_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_tools.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_decoder_5_32
+INFO: [VRFC 10-311] analyzing module ls132r_decoder_6_64
+INFO: [VRFC 10-311] analyzing module ls132r_first_one_32_5
+INFO: [VRFC 10-311] analyzing module ls132r_first_one_8_3
+INFO: [VRFC 10-311] analyzing module ls132r_first_one_4_2
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_rstgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/CPU_gs132/ls132r_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls132r_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/testbench/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [C:/Users/Dell/Desktop/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/glbl.v:6]

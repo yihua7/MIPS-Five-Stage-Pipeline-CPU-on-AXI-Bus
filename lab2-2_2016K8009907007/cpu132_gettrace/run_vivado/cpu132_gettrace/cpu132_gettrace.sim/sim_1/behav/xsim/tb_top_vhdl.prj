@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xpm  \
+"D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+# Do not sort compile order
+nosort

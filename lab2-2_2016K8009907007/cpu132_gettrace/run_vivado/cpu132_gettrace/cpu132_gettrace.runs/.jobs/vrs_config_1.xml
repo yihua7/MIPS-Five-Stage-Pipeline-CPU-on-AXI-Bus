@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="data_ram_synth_1" LaunchDir="D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_pll_synth_1" LaunchDir="D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="inst_ram_synth_1" LaunchDir="D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/inst_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="data_ram_synth_1"/>
+		<Parent Id="clk_pll_synth_1"/>
+		<Parent Id="inst_ram_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/Computer Architecture/ucas_CDE/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="data_ram_synth_1"/>
+		<Parent Id="clk_pll_synth_1"/>
+		<Parent Id="inst_ram_synth_1"/>
+	</Run>
+</Runs>
+

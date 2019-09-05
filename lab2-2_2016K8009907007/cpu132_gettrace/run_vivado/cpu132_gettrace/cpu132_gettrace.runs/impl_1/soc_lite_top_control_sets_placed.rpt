@@ -1,0 +1,157 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Sep 17 21:12:43 2018
+| Host         : DESKTOP-HL6I6PS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7a200t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            4 |
+|     10 |            4 |
+|     12 |            2 |
+|    16+ |           77 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             346 |           75 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             332 |           57 |
+| Yes          | No                    | No                     |            3246 |          790 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1256 |          282 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+
+|       Clock Signal      |                Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+
+|  clk_pll/inst/cpu_clk   | confreg/step0_sample                       | confreg/count_reg[0]_0                 |                1 |              2 |
+|  clk_pll/inst/cpu_clk   | confreg/step1_sample                       | confreg/count_reg[0]_0                 |                1 |              2 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/rs_pc_r[31]_i_1_n_0          | cpu/u_fetch/rs_dest_r_reg[0]           |                1 |              8 |
+|  clk_pll/inst/cpu_clk   |                                            | confreg/state_count0                   |                1 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/heap_19_reg[12]_1            |                                        |                2 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_cause_IP0_i_1_n_0         | confreg/count_reg[0]_0                 |                2 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_status_EXL1               | confreg/count_reg[0]_0                 |                2 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/inst_pc_r[30]_i_1_n_0          |                                        |                4 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/rs_pc_r[31]_i_1_n_0          | cpu/u_execute/rs_excode_r[4]_i_1_n_0   |                2 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_debug_DExcCode[4]_i_1_n_0 |                                        |                2 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cnt_incr_en                  | cpu/u_execute/mul_div_cnt_r[5]_i_1_n_0 |                3 |             12 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wb_excode_r[5]_i_1_n_0       |                                        |                1 |             12 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/virtual_uart_data_reg[7][0]  | confreg/count_reg[0]_0                 |                2 |             16 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_depc_DEPC[31]_i_1_n_0     |                                        |                6 |             18 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/p_1_in                       | confreg/count_reg[0]_0                 |                7 |             24 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/ena                            |                                        |                6 |             26 |
+|  clk_pll/inst/cpu_clk   |                                            | confreg/key_count0                     |                5 |             40 |
+|  clk_pll/inst/cpu_clk   |                                            | confreg/step0_count0                   |                5 |             40 |
+|  clk_pll/inst/cpu_clk   |                                            | confreg/step1_count0                   |                5 |             40 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_depc_DEPC[30]_i_1_n_0     | confreg/count_reg[0]_0                 |               10 |             46 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/inst_pc_r[31]_i_2_n_0          | confreg/count_reg[0]_0                 |               11 |             54 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/tbuf_r[95]_i_1_n_0           |                                        |                9 |             62 |
+|  clk_pll/inst/timer_clk |                                            | confreg/count_reg[0]_0                 |                8 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/rs_v3_r_reg[31]_0[0]           |                                        |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cnt_incr_en                  |                                        |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_badvaddr0                 |                                        |                8 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_compare[31]_i_1_n_0       | confreg/count_reg[0]_0                 |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_count[0]_i_1_n_0          | confreg/count_reg[0]_0                 |                8 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_desave                    |                                        |               18 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_epc[31]_i_1_n_0           |                                        |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr_errorepc[31]_i_1_n_0      | confreg/count_reg[0]_0                 |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/E[0]                         |                                        |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr1_reg[0][0]                | confreg/count_reg[0]_0                 |               11 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr0_reg[31]_0[0]             | confreg/count_reg[0]_0                 |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr5_reg[31][0]               | confreg/count_reg[0]_0                 |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr7_reg[31][0]               | confreg/count_reg[0]_0                 |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr2_reg[31][0]               | confreg/count_reg[0]_0                 |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/conf_rdata_reg_reg[31]_0[0]  | confreg/count_reg[0]_0                 |               24 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/conf_wdata_r_reg[0]_0[0]     |                                        |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr4_reg[31][0]               | confreg/count_reg[0]_0                 |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr3_reg[31][0]               | confreg/count_reg[0]_0                 |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/reg_hi                       |                                        |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/reg_lo                       |                                        |               24 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/tbuf_r[63]_i_1_n_0           |                                        |               22 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/cr6_reg[31][0]               | confreg/count_reg[0]_0                 |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/iba_reg[0]_0[0]              |                                        |               18 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/num_data_reg[31][0]          | confreg/count_reg[0]_0                 |                6 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[26]                 |                                        |               25 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[25]                 |                                        |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[19]                 |                                        |               11 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[0]                  |                                        |               28 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[28]                 |                                        |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[20]                 |                                        |               18 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[13]                 |                                        |               10 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[11]                 |                                        |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[2]                  |                                        |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[5]                  |                                        |               10 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[6]                  |                                        |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[10]                 |                                        |               27 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[16]                 |                                        |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[29]                 |                                        |               11 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[18]                 |                                        |               24 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[24]                 |                                        |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[27]                 |                                        |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[23]                 |                                        |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[15]                 |                                        |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[30]                 |                                        |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[7]                  |                                        |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[8]                  |                                        |               25 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[12]                 |                                        |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[21]                 |                                        |                9 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[4]                  |                                        |               18 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[14]                 |                                        |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[3]                  |                                        |                8 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[22]                 |                                        |               19 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[1]                  |                                        |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[9]                  |                                        |                7 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/wen0_vec[17]                 |                                        |                8 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/fsm_to_full                    |                                        |               11 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/rs_v2_r_reg[31][0]             |                                        |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_fetch/rs_v1_r_reg[31][0]             |                                        |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/led_rg0_data_reg[31][0]      | confreg/count_reg[0]_0                 |               15 |             68 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/led_rg1_data_reg[31][0]      | confreg/count_reg[0]_0                 |               13 |             68 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/rs_pc_r[31]_i_1_n_0          |                                        |               16 |             88 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/led_data_reg[31]_0[0]        | confreg/count_reg[0]_0                 |               22 |             96 |
+|  clk_pll/inst/cpu_clk   | cpu/u_execute/new_inst_in                  |                                        |               30 |            132 |
+|  clk_pll/inst/timer_clk |                                            |                                        |               31 |            134 |
+|  clk_pll/inst/cpu_clk   |                                            | confreg/count_reg[0]_0                 |               33 |            140 |
+|  clk_pll/inst/cpu_clk   |                                            |                                        |               44 |            212 |
++-------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+
+
+
